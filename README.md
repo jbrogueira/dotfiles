@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal config files for macOS.
+Personal config files for macOS and Linux.
 
 ## Contents
 
@@ -12,7 +12,7 @@ Personal config files for macOS.
 | `claude/CLAUDE.md` | `~/.claude/CLAUDE.md` |
 | `claude/settings.json` | `~/.claude/settings.json` |
 | `claude/skills/` | `~/.claude/skills` |
-| `iterm2/` | iTerm2 preferences folder |
+| `iterm2/` | iTerm2 preferences folder (macOS only) |
 
 ## Bootstrap
 
