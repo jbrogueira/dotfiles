@@ -29,9 +29,11 @@ symlink "$DOTFILES/claude/skills"        "$HOME/.claude/skills"
 symlink "$DOTFILES/claude/CLAUDE.md"     "$HOME/.claude/CLAUDE.md"
 symlink "$DOTFILES/claude/settings.json" "$HOME/.claude/settings.json"
 
-echo "==> iTerm2"
-defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$DOTFILES/iterm2"
-defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
-echo "  Preferences will load from $DOTFILES/iterm2 (restart iTerm2 to apply)"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  echo "==> iTerm2"
+  defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$DOTFILES/iterm2"
+  defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+  echo "  Preferences will load from $DOTFILES/iterm2 (restart iTerm2 to apply)"
+fi
 
 echo "Done."
