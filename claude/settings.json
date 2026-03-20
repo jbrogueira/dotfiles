@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdflatex *)",
+      "Bash(pandoc *)",
+      "Read(*)",
+      "Glob(*)",
+      "Bash(ls *)"
+    ]
+  },
+  "enabledPlugins": {
+    "code-simplifier@claude-plugins-official": true
+  },
+  "skipDangerousModePermissionPrompt": true
+}

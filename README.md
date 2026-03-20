@@ -10,7 +10,7 @@ Personal config files for macOS and Linux.
 | `.gitconfig` | `~/.gitconfig` |
 | `config/git/ignore` | `~/.config/git/ignore` |
 | `claude/CLAUDE.md` | `~/.claude/CLAUDE.md` |
-| `claude/settings.json` | `~/.claude/settings.json` (gitignored — contains API keys) |
+| `claude/settings.json` | `~/.claude/settings.json` |
 | `claude/skills/` | `~/.claude/skills` |
 | `config/starship/starship.toml` | `~/.config/starship.toml` |
 | `config/btop/btop.conf` | `~/.config/btop/btop.conf` |
