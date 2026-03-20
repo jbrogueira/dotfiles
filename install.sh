@@ -43,7 +43,7 @@ fi
 echo "==> Claude"
 symlink "$DOTFILES/claude/skills"        "$HOME/.claude/skills"
 symlink "$DOTFILES/claude/CLAUDE.md"     "$HOME/.claude/CLAUDE.md"
-symlink "$DOTFILES/claude/settings.json" "$HOME/.claude/settings.json"
+# claude/settings.json is gitignored (contains API keys) — copy manually if needed
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   echo "==> iTerm2"
