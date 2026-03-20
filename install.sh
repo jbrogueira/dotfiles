@@ -24,6 +24,22 @@ echo "==> Git"
 symlink "$DOTFILES/.gitconfig"       "$HOME/.gitconfig"
 symlink "$DOTFILES/config/git/ignore" "$HOME/.config/git/ignore"
 
+echo "==> Starship"
+symlink "$DOTFILES/config/starship/starship.toml" "$HOME/.config/starship.toml"
+
+echo "==> btop"
+symlink "$DOTFILES/config/btop/btop.conf" "$HOME/.config/btop/btop.conf"
+
+echo "==> Zed"
+symlink "$DOTFILES/config/zed/settings.json" "$HOME/.config/zed/settings.json"
+
+echo "==> Ghostty"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  symlink "$DOTFILES/config/ghostty/config" "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
+else
+  symlink "$DOTFILES/config/ghostty/config" "$HOME/.config/ghostty/config"
+fi
+
 echo "==> Claude"
 symlink "$DOTFILES/claude/skills"        "$HOME/.claude/skills"
 symlink "$DOTFILES/claude/CLAUDE.md"     "$HOME/.claude/CLAUDE.md"
